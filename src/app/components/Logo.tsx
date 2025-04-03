@@ -12,6 +12,7 @@ export default function Logo() {
                 alt="Company Logo"
                 width={219}
                 height={49}
+                className="lg:w-[219px] lg:h-[49px] w-[149px] h-[33px]"
             />
         </Link>
     )

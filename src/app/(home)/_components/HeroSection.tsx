@@ -25,7 +25,7 @@ const HeroSection = () => {
     }, [emblaApi])
 
     return (
-        <div className="pt-[124px] pb-[124px] bg-heroBg">
+        <div className="pt-[52px] pb-[40px] lg:pt-[124px] lg:pb-[124px] bg-heroBg">
             <div className="relative w-full max-w-screen pl-auto">
                 <div ref={emblaRef}>
                     <div className="flex gap-5">

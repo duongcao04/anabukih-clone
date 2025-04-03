@@ -3,7 +3,9 @@ import localFont from 'next/font/local'
 import './globals.css'
 import Header from './components/layouts/header'
 import Footer from './components/layouts/Footer'
-import FixedContact from './components/layouts/FixedContact'
+import FixedContact, {
+    MobileFixedContact,
+} from './components/layouts/FixedContact'
 import Ads from './components/layouts/Ads'
 
 const geistSans = localFont({
@@ -41,11 +43,16 @@ export default function RootLayout({
                 <div id="page">
                     <Header />
                     <main>{children}</main>
-                    <div className="fixed bottom-[25px] right-0 z-[5]">
+                    <div className="fixed bottom-[50px] lg:bottom-[25px] right-0 z-[5]">
                         <Ads />
                     </div>
-                    <div className="fixed bottom-0 w-full bg-white z-10">
-                        <FixedContact />
+                    <div className="fixed bottom-0 w-full rounded-t-3xl lg:rounded-none bg-white z-10">
+                        <div className="hidden lg:block">
+                            <FixedContact />
+                        </div>
+                        <div className="block lg:hidden">
+                            <MobileFixedContact />
+                        </div>
                     </div>
                     <Footer />
                 </div>

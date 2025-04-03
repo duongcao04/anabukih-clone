@@ -81,14 +81,17 @@ type Props = {}
 export default function Who({}: Props) {
     return (
         <div className="container">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col lg:flex-row items-center justify-between">
                 <h1 className="text-[32px] font-sans font-semibold">
                     お知らせ
                 </h1>
-                <div className="border rounded-lg py-[10px] pl-[30px]">
+                <div className="w-full lg:w-fit border rounded-lg py-[10px] pl-[30px]">
                     <div className="gap-[35px] flex items-center justify-start max-w-[498px] overflow-hidden">
                         {Categories.map((category, index) => (
-                            <div key={index} className="hover:underline">
+                            <div
+                                key={index}
+                                className="hover:underline text-xs lg:text-base"
+                            >
                                 <Link
                                     href={category.url}
                                     className="text-nowrap"
@@ -100,7 +103,7 @@ export default function Who({}: Props) {
                     </div>
                 </div>
             </div>
-            <div className="mt-[35px] grid grid-cols-2 gap-x-[24px] gap-y-[22px]">
+            <div className="mt-[35px] grid grid-cols-1 lg:grid-cols-2 gap-x-[24px] gap-y-[22px]">
                 {Topics.map((topic, index) => (
                     <div
                         key={index}

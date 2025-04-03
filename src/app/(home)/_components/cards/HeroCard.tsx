@@ -7,7 +7,7 @@ type Props = { data: HeroItem }
 
 export default function HeroCard({ data }: Props) {
     return (
-        <div className="max-w-[240px] group cursor-pointer select-none shadow-md rounded-3xl">
+        <div className="w-[220px] lg:w-[240px] group cursor-pointer select-none shadow-md rounded-3xl">
             <Image
                 src={data.imageUrl}
                 alt={data.itemTitle}
@@ -22,7 +22,7 @@ export default function HeroCard({ data }: Props) {
                 <p className="text-[15px] font-bold text-white text-wrap text-left">
                     {data.itemTitle}
                 </p>
-                <button className="rounded-full w-[200px] h-[28px] bg-white group-hover:bg-black flex items-center justify-between py-2.5 pl-[18px] pr-[34px]">
+                <button className="w-full rounded-full h-[28px] bg-white group-hover:bg-black flex items-center justify-between py-2.5 pl-[18px] pr-[34px]">
                     <p
                         className="text-[8px] text-left font-medium"
                         style={{ color: data.bottomItemColor }}

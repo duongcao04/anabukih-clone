@@ -30,7 +30,7 @@ export default function StudentWorks({}: Props) {
             <h1 className="text-center text-[32px] font-sans font-semibold">
                 学生作品
             </h1>
-            <div className="group mt-[35px] grid grid-cols-[1fr_240px] w-full h-full">
+            <div className="group mt-[35px] grid lg:grid-cols-[1fr_240px] w-full h-full">
                 <div className="w-full h-full grid grid-cols-6 gap-[25px]">
                     {Images.map((image, index) => (
                         <Link key={index} href={'#'} className="block">
@@ -46,7 +46,7 @@ export default function StudentWorks({}: Props) {
                 </div>
                 <Link
                     href="/works/"
-                    className="w-full h-full flex items-center justify-center"
+                    className="hidden lg:flex w-full h-full items-center justify-center"
                 >
                     <button className="group-hover:underline">
                         <p>一覧へ</p>

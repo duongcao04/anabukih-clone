@@ -55,7 +55,7 @@ const topics = [
 type Props = {}
 export default function Appointment({}: Props) {
     return (
-        <div className="bg-[#e0e9dd] pt-[40px] pb-[96px]">
+        <div className="max-w-screen overflow-hidden bg-[#e0e9dd] pt-[40px] pb-[96px]">
             <div className="container">
                 <p className="text-[32px] font-bold text-[#80aa7b]">
                     予定カレンダー
@@ -124,7 +124,7 @@ export default function Appointment({}: Props) {
                 <p className="mt-[45px] text-center text-[21px] font-bold text-[#80aa7b]">
                     オープンキャンパスに関するお知らせ
                 </p>
-                <div className="mt-[25px] grid grid-cols-2 divide-x divide-y bg-white rounded-lg">
+                <div className="mt-[25px] grid grid-cols-1 lg:grid-cols-2 divide-x divide-y bg-white rounded-lg">
                     {topics.map((topic, index) => (
                         <div
                             key={index}

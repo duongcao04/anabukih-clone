@@ -95,3 +95,11 @@ export default function Banner({}: Props) {
         </div>
     )
 }
+
+export function MobileBanner() {
+    return (
+        <div className="container">
+            <LargestBanner />
+        </div>
+    )
+}

@@ -78,3 +78,27 @@ export default function FixedContact({}: Props) {
         </div>
     )
 }
+
+export const MobileFixedContact = () => {
+    return (
+        <div className="container py-[15px] rounded-t-xl flex items-center justify-between shadow-md">
+            <Link target="_blank" href="https://page.line.me/anabuki.design">
+                <Image
+                    src="https://web.anabukih.ac.jp/wp-content/themes/anabuki-theme/cmn/img/common/icon_line.png?v=202306071024"
+                    alt="line contact"
+                    width={59}
+                    height={25}
+                />
+            </Link>
+            <Link href={'#'} className="text-xs">
+                資料請求
+            </Link>
+            <Link
+                href={'#'}
+                className="inline-block bg-[#dbf5d9] text-[#59c1a0] px-[15px] py-[10px] rounded-full text-xs"
+            >
+                オープンキャンパス 次回 <span className="font-bold">4/12</span>
+            </Link>
+        </div>
+    )
+}

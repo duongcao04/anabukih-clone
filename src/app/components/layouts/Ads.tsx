@@ -13,7 +13,7 @@ export default function Ads({}: Props) {
                     alt="ads"
                     width={170}
                     height={192}
-                    className="rounded-tl-lg"
+                    className="rounded-tl-lg w-[95px] h-[107px] lg:w-[170px] lg:h-[192px]"
                 />
             </Link>
         </div>
