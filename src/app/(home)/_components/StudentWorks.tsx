@@ -33,7 +33,7 @@ export default function StudentWorks({}: Props) {
             <div className="group mt-[35px] grid lg:grid-cols-[1fr_240px] w-full h-full">
                 <div className="w-full h-full grid grid-cols-6 gap-[25px]">
                     {Images.map((image, index) => (
-                        <Link key={index} href={'#'} className="block">
+                        <Link key={index} href={'/#'} className="block">
                             <Image
                                 src={image}
                                 alt="Image"
